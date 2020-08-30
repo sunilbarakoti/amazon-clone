@@ -1,3 +1,10 @@
+/*
+    - This component is reposible for displaying the items added in the cart.
+    - It also checks if the basket is empty and displays the message accordingly.
+    - Context API is used for the state management. Basket is the global variable from the context API
+      and is updated everytime as the user adds the product.
+ */
+
 import React from 'react';
 
 import { useStateValue } from '../StateProvider';

@@ -1,3 +1,9 @@
+/*
+    - This is component serves as a navbar to this application.
+    - It provides an option to the users to navigate into different pages like login, home and checkout.
+    - We take the global state values i.e. users and basket to display the username and items count in nav bar.
+ */
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
@@ -39,7 +45,7 @@ function Navbar() {
 
                 <Link to={!user && "/login"} className="navbar__link">
                     <div onClick={login} className="navbar__option">
-                        <span className="navbar__optionFirst">Hello {user?.email}</span>
+                        <span className="navbar__optionFirst">Hello {user?.email.split("@")[0]}</span>
                         <span className="navbar__optionSecond">{user ? "Sign Out" : "Sign In"}</span>
                     </div>
                 </Link>

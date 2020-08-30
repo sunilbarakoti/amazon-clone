@@ -1,3 +1,9 @@
+/*
+    - This component calculates the subtotal  of the items added in the cart and displays in the 
+      checkout page.
+    - Global variable basket is taken and the total sum of amount is calculated using 'react-currency-format'.
+*/
+
 import React from 'react';
 
 import CurrencyFormat from 'react-currency-format';

@@ -1,7 +1,14 @@
+/*
+    - This is a child component to the parent Home Component.
+    - The attributes of the products like id, title, image, price and rating are taken
+      to create a dynamic component that describes the product.
+*/
+
+
 import React from 'react';
 
-import './Product.css';
 import { useStateValue } from '../StateProvider';
+import './Product.css';
 
 function Product({ id, title, price, rating, image }) {
 

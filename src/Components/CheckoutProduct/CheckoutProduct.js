@@ -1,3 +1,9 @@
+/*
+    - This is a child component to the parent Checkout page.
+    - The attributes of the products like id, title, image, price and rating are taken 
+      to create a component that describes the product added in the cart in detail.
+*/
+
 import React from 'react';
 
 import { useStateValue } from '../StateProvider';

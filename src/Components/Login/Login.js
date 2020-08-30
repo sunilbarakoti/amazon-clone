@@ -1,3 +1,10 @@
+/*
+    - This components is for the login page.
+    - Users are authenticated via Firebase and login method below does that.
+    - For the first time users, there is a signup option which is implimented inside the singup method.
+    
+*/
+
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { auth } from '../../Firebase';
@@ -46,7 +53,7 @@ function Login() {
                     <h5>Email</h5>
                     <input type="text" onChange={(event) => setEmail(event.target.value)} />
                     <h5>Password</h5>
-                    <input type="text" onChange={(event) => setPassword(event.target.value)} />
+                    <input type="password" onChange={(event) => setPassword(event.target.value)} />
                     <button onClick={login} className="login__signInButton">Sign In</button>
                 </form>
                 <p>

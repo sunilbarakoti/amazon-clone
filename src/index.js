@@ -1,11 +1,20 @@
+/*
+  - This is a main component. 
+  - StateProvider from the context API has been put on top of the 'App' component to
+    make it available all accross.
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { StateProvider } from './Components/StateProvider';
 import reducer, { initialState } from './reducer';
 
+
+import './index.css';
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>

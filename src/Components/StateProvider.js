@@ -1,3 +1,7 @@
+/*
+    This is a configuration page for the react context API's.
+*/
+
 import React, { createContext, useContext, useReducer } from 'react';
 
 //data layer

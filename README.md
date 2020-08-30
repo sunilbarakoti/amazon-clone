@@ -1,3 +1,12 @@
+## Demo :
+
+Live URL : https://e-commerce-93aba.web.app/
+
+<p align="center">
+
+  <img src="./doc/demo.gif">
+</p>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

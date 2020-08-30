@@ -1,3 +1,10 @@
+/*
+    - This is a component which takes the previous state of and returns the next state based on the action types.
+    - Intial state of the application has intialiazed inside the initialState object.
+    - getBasketTotal() calculates the total amount inside the baset and returns the sum.
+
+*/
+
 export const initialState = {
     basket: [],
     user: null

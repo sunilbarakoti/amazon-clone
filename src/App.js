@@ -1,5 +1,14 @@
+/*
+  - This is child component to the main component index.js
+  - This component handles routes in the application.'react-router-dom' has been used for the same.
+  - There are basically three pages: home, login and checkout and routes for them are "/", "/login", "/checkout"
+  - Apart from the routing, even the user login status is being checked and 
+    the user status is updated on the global state variable user.
+*/
+
+
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
@@ -8,6 +17,7 @@ import Login from './Components/Login/Login';
 import { useStateValue } from './Components/StateProvider';
 import { auth } from './Firebase';
 import './App.css';
+
 
 
 function App() {
@@ -31,9 +41,7 @@ function App() {
     })
 
     return () => {
-      //cleanup operation goes here!
       unsubscribe();
-
     }
   }, [])
   return (

@@ -1,3 +1,7 @@
+/* 
+    Google firebase setup for the authentication and app deployment.
+*/
+
 import firebase from 'firebase';
 
 const firebaseApp = firebase.initializeApp({
